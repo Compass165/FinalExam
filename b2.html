@@ -17,11 +17,11 @@
 
 
 let array = [1,2,3,4,5,6]
-var index = +prompt("Nhập số index bất kỳ");
-var x = +prompt("Nhập số x bất kỳ")
+let index = +prompt("Nhập số index bất kỳ");
+let x = +prompt("Nhập số x bất kỳ")
 function insertNumberToArray(array,x,index) {
     for (let i = 0; i <= array.length; i++) {
-        if (i == index) {
+        if (i === index) {
             for (let j = (array.length - 1); j >= i; j--) {
                 array[j + 1] = array[j];
             }
