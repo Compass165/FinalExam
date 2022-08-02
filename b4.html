@@ -29,23 +29,14 @@
             this.color = color;
         }
         render(x, y, width, height, color) {
-            canvas.beginPath();
             canvas.fillStyle = color;
             canvas.fillRect(x, y, width, height);
-            canvas.stroke();
-            canvas.closePath()
+            canvas.strokeRect(x, y, width, height)
         }
     }
 
 
-    canvas.beginPath()
-    canvas.fillStyle = "#ff0000"
-    canvas.arc(10, 10, 100, 0, Math.PI*2)
-    canvas.fill()
-
-
-
     let newRactangle = new Rectangle()
-    newRactangle.render(100,100,150,100, "violet")
+    newRactangle.render(100,100,150,100, "#accbee")
 </script>
 </html>
